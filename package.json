@@ -1,0 +1,14 @@
+{
+  "name": "belgium-idnumber-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Jan Claeys",
+  "license": "ISC",
+  "dependencies": {
+    "random-datetime": "^1.0.1"
+  }
+}
