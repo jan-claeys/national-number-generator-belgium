@@ -11,5 +11,6 @@ npm i national-number-generator-belgium --save
 To generate a random belgium national number:
 ```
 import * as nationalNumber from "national-number-generator-belgium";
+
 nationalNumber.generateRandomIdNumber();
 ```
