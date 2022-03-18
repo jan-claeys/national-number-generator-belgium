@@ -1,7 +1,7 @@
 var randomDate = require('random-datetime');
 
 function generateRandomIdNumber(){
-    const year = Math.floor(Math.random(1910)*2000);
+    const year = Math.floor(Math.random() * (2000 - 1910) ) + 1910;
     const date = randomDate({year: year});
     const secondGroup = randomSecondGroup();
     const firstAndSecondGroup = `${(""+date.getFullYear()).slice(-2)}${zeroFill(date.getMonth(), 2)}${zeroFill(date.getDay(), 2)}${secondGroup}`;
