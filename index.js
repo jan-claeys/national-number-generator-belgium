@@ -1,7 +1,7 @@
 var randomDate = require('random-datetime');
 
 function generateRandomIdNumber(){
-    const year = Math.floor(Math.random(1800)*2000);
+    const year = Math.floor(Math.random(1910)*2000);
     const date = randomDate({year: year});
     const secondGroup = randomSecondGroup();
     const firstAndSecondGroup = `${(""+date.getFullYear()).slice(-2)}${zeroFill(date.getMonth(), 2)}${zeroFill(date.getDay(), 2)}${secondGroup}`;
@@ -9,7 +9,7 @@ function generateRandomIdNumber(){
     return `${firstAndSecondGroup}${thirdGroup}`;
 }
 
-function randomSecondGroup(gender){
+function randomSecondGroup(){
     return zeroFill(Math.floor(Math.random(0)*999), 3);
 }
 
